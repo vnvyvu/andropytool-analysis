@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css"/>
+        <script src="js/script.js" async></script>
+    </head>
+    <body>
+        <h1 class="uk-text-center">Phân tích kết quả Andropytool</h1>
+        <h2>Phân tích file json trong thư mục <b>Features_files</b></h2>
+        <p>Có thể tải lên tệp json</p>
+        <div class="test-upload uk-placeholder uk-text-center">
+            <span uk-icon="icon: cloud-upload"></span>
+            <span class="uk-text-middle">Tải lên</span>
+            <div uk-form-custom>
+                <input id="u-file" type="file">
+                <span class="uk-link">file</span>
+            </div>
+        </div>
+        <p>Hoặc paste nội dung file</p>
+        <textarea id="analysis" rows="10" class="uk-textarea"></textarea>
+        <a class="uk-button uk-button-default uk-display-inline-block uk-align-item-center" href="#" onclick="textJSON()">Phân tích</a>
+        <ul uk-tab>
+            <li class="uk-active"><a href="">Op-code</a></li>
+            <li><a href="">API call</a></li>
+            <li><a href="">Chuỗi ký tự dài nhất</a></li>
+        </ul>
+        <ul class="uk-switcher uk-margin">
+            <li>
+                <ul id="opcode"></ul>
+            </li>
+            <li>
+                <ul id="apicall"></ul>
+            </li>
+            <li>
+                <ul id="string"></ul>
+            </li>
+        </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js" 
+                integrity="sha256-v789mr/zBbgR53mfydCI78CSAF+9+nRqu+JRfs1UPg0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js" 
+                integrity="sha256-l+AmZGiFz41J+gms80qC7faslJDberZDhjEsmDmQy8s=" crossorigin="anonymous"></script>
+    </body>
+</html>
